@@ -177,7 +177,7 @@ def parse_args():
     # data loader
     parser.add_argument('--data', 
                         type=str, 
-                        default=ROOT / 'data/weather.csv', 
+                        default=ROOT / 'data/ETTh1.csv', 
                         help='dataset.csv path')
     parser.add_argument(
         '--feature_type',

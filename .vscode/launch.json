@@ -13,10 +13,10 @@
             "console": "integratedTerminal",
             "args": [
                         "--seed", "42",
-                        "--data", "./data/weather.csv",
+                        //"--data", "./data/weather.csv", # Code is wrong as args.data should be a Path object.  Set in main.py
                         "--feature_type", "M",
-                        //"--target", "OT", only for feature_type S or MS
-                        //"--checkpoint_dir", "./checkpoints",
+                        //"--target", "OT", # only for feature_type S or MS
+                        //"--checkpoint_dir", "./checkpoints", # I made this decision for some reason?
                         //"--name", "exp",
                         "--seq_len", "512",
                         "--pred_len", "96",

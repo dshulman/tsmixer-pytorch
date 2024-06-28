@@ -9,7 +9,7 @@
             "name": "Python Debugger: Current File with Arguments",
             "type": "debugpy",
             "request": "launch",
-            "program": "${file}",
+            "program": "main.py",
             "console": "integratedTerminal",
             "args": [
                         "--seed", "42",
@@ -21,12 +21,12 @@
                         "--seq_len", "512",
                         "--pred_len", "96",
                         "--learning_rate", "0.0001",
-                        "--n_block", "4",
+                        "--n_block", "5",
                         "--dropout", "0.3",
                         "--ff_dim", "32",
                         "--norm_type", "B",
                         "--activation", "relu",
-                        "--train_epochs", "1",
+                        "--train_epochs", "10",
                         "--batch_size", "32",
                         "--patience", "5",
                         "--result_path", "result.csv"

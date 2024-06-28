@@ -78,7 +78,8 @@ class CustomDataLoader:
                 CustomDataset(data_x, data_y, self.seq_len, self.pred_len),
                 range(len(data_x) - self.seq_len - self.pred_len + 1)
             ),
-            batch_size=self.batch_size, 
+            batch_size=self.batch_size,
+            drop_last=True,
             shuffle=shuffle
         )
 
